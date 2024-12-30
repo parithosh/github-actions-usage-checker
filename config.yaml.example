@@ -1,0 +1,22 @@
+# The github token to use for the requests (required)
+# You can get one from https://github.com/settings/tokens
+github_token: ""
+
+# List of GitHub Actions to check for
+actions:
+  - "actions/checkout@v4"
+  - "actions/setup-node@v4"
+
+# Organizations to check (all repositories)
+organizations:
+  - "your-org-name"
+
+# Specific repositories and branches to check
+# Use empty array [] to check default branch only
+repositories:
+  owner/repo-name:
+    - "main"
+    - "develop"
+  another-owner/repo: []  # checks default branch
+  
+  
